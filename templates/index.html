@@ -12,9 +12,15 @@
 <body>
 <center>
     <a href="{% url 'start' %}" class="btn btn-danger" >Start</a>
-    <a href="{% url 'stop' %}" class="btn btn-danger" >Stop</a>
+    <a href="{% url 'stop' %}" class="btn btn-danger" >Stop</a></br>
+    {% include 'messages.html' %}
+    <form>
+        {{form}}
+        <input type="submit" value="انتخاب شهر">
+    </form>
 </center>
-<div class="compass">
+
+    <div class="compass">
 <div class="compass-inner"><div class="north">N</div><div class="east">E</div><div class="west">W</div><div class="south">S</div><div class="main-arrow"><div class="arrow-up"></div><div class="arrow-down"></div></div></div>
 </div>
 <h3 class="text-center">اینجا تهران هست</h3>
